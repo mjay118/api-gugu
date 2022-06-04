@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "awards",
+  "info": {
+    "singularName": "award",
+    "pluralName": "awards",
+    "displayName": "Award",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "awardname": {
+      "type": "string"
+    },
+    "award_vendors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::award-vendor.award-vendor",
+      "inversedBy": "awards"
+    }
+  }
+}

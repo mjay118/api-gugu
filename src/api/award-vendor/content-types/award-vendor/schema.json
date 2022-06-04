@@ -4,7 +4,8 @@
   "info": {
     "singularName": "award-vendor",
     "pluralName": "award-vendors",
-    "displayName": "award-vendor"
+    "displayName": "award-vendor",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,13 +16,23 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "awards": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::award.award",
       "inversedBy": "award_vendors"
+    },
+    "vendorimage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

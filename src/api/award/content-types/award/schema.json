@@ -19,7 +19,28 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::award-vendor.award-vendor",
-      "inversedBy": "awards"
+      "mappedBy": "awards"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "onGoingStatus": {
+      "type": "boolean"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "resultAnnouncementDate": {
+      "type": "date"
+    },
+    "juryDetails": {
+      "type": "richtext"
+    },
+    "perksAndBenifits": {
+      "type": "richtext"
     }
   }
 }
